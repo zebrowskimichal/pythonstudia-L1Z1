@@ -31,36 +31,37 @@ class funkcjaKwadratowa:
             miejsce1 = float(((-self.b)-pierwiastek)/2*self.a)
             miejsce2 = float(((-self.b)+pierwiastek)/2*self.a)
             print("Pierwsze miejsce zerowe, to: " + str(miejsce1) + ", a drugie miejsce zerowe, to: " + str(miejsce2))
+##
+##
+##print("test")
+##test = funkcjaKwadratowa(3, 4, 5)
+##print("Podaj pierwsza liczbe.")
+##test.a = float(input())
+##print("Podaj druga liczbe.")
+##test.b = float(input())
+##print("Podaj trzecia liczbe.")
+##test.c = float(input())
+##print(test.a)
+##print(test.rozwiaz())
 
 
-print("test")
-test = funkcjaKwadratowa(3, 4, 5)
-print("Podaj pierwsza liczbe.")
-test.a = float(input())
-print("Podaj druga liczbe.")
-test.b = float(input())
-print("Podaj trzecia liczbe.")
-test.c = float(input())
-print(test.a)
-print(test.rozwiaz())
+class UlamekZ:
 
+    def __init__(self, licznik, mianownik):
+        self.licznik = licznik
+        self.mianownik = mianownik
 
-##class UlamekZ:
-##
-##    def __init__(self, licznik, mianownik):
-##        self.licznik = licznik
-##        self.mianownik = mianownik
-##
-##    def skroc(self):
-##        while b > 0:
-##            r = a % b
-##            a = r
-##            b = b
-##
-##    def dodaj(self):
-##       
-##    def odejmij(self):
-##
-##    def mnoz(self):
-##
-##    def dziel(self):
+    def skroc(self):
+        print("Twoj ulamek, to: " + str(self.licznik) + "/" + str(self.mianownik))
+        wynik = math.gcd(self.licznik, self.mianownik)
+        self.licznik //= wynik
+        self.mianownik //= wynik
+        print("Skrocony ulamek, to: " + str(self.licznik) + "/" + str(self.mianownik))
+
+    @staticmethod
+    def dodaj(n1, n2)
+        
+        
+
+ulamek = UlamekZ(50, 150)
+print(ulamek.skroc())
